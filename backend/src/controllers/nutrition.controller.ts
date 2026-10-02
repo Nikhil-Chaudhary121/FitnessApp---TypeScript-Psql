@@ -34,3 +34,24 @@ export const calculateNutrition = (req: Request, res: Response) => {
     }
   });
 };
+
+
+
+// export const addFood = (req: Request, res: Response) => {
+//   try {
+//     const { food, grams } = req.body;
+
+//     const result = calculateNutrition ({
+//       food,
+//       grams,
+//     });
+
+//     res.status(200).json(result);
+//   } catch (error) {
+//     res.status(400).json({
+//       message: error instanceof Error
+//         ? error.message
+//         : "Something went wrong",
+//     });
+//   }
+// };
